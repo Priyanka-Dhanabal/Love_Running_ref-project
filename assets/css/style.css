@@ -89,9 +89,23 @@ main{
     margin-top: 47px;
 }
 
-footer{
-    background-color: rgb(125, 125, 180);
+#social-networks{
+    display: flex;
+    text-align: center;
+    padding: 20px 0;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+    
 }
+
+i{
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+
 
 /* tablets and larger (768px and up) */
 
