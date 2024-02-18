@@ -30,9 +30,12 @@ header {
     width: 100%;
     z-index: 99;
     box-shadow: 0 2px 2px #3a3a3a;
-
-
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
+
+
 
 header a{
     text-decoration: none;
@@ -64,13 +67,26 @@ nav{
     padding: auto 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    top: 100%;
 }
 
+/*Nav toggle */
+#nav-toggle:checked~nav{
+    display:block
+}
 
+#nav-toggle{
+    display: none;
+}
+
+.nav-toggle-label{
+    font-size: 2rem;
+}
 
 main{
     background-color: yellow;
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 footer{
