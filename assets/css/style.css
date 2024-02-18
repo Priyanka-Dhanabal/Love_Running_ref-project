@@ -16,7 +16,8 @@ body{
 
 }
 
-h1{
+
+h1,h2,h3{
     font-family: 'oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -95,7 +96,26 @@ main{
 #hero{
     height: 600px;
     width: 100%;
+    position: relative;
 }
+
+#cover-text{
+    background-color: rgba(243, 109, 107, 0.7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3{
+    color: #ffffff;
+}
+
+
+/* Footer*/
 
 #social-networks{
     display: flex;
@@ -103,6 +123,7 @@ main{
     padding: 20px 0;
     justify-content: space-evenly;
     list-style-type: none;
+    
 
     
 }
@@ -147,6 +168,11 @@ i{
 
     main{
         margin-top: 80px;
+    }
+
+    #cover-text{
+        width: 300px;
+        right: 50px;
     }
     
 }
