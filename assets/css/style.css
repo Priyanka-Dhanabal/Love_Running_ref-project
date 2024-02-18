@@ -217,6 +217,19 @@ nav {
     color: #fafafa;
 }
 
+/*Gallery*/
+
+#photos{
+    clear:both;
+    line-height: 1rem;
+    column-count: 1;
+    gap: 1px;
+
+}
+#photos > img{
+    width: 100%;
+}
+
 
 /* tablets and larger (768px and up) */
 
@@ -276,6 +289,10 @@ nav {
 
 }
 
+#photos{
+    column-count: 3;
+}
+
 }
 
 @media screen and (min-width:992px) {
@@ -284,6 +301,9 @@ nav {
 
     }
 
+    #photos{
+        column-count: 4;
+    }
 
 
 }
