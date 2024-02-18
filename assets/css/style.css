@@ -89,7 +89,7 @@ nav {
 
 
 #main {
-
+    
     flex: 1 0 auto;
     margin-top: 47px;
 }
@@ -121,9 +121,9 @@ nav {
 #reasons {
     width: 90%;
     margin: 20px auto;
+    
 
-
-
+    
 
 }
 
@@ -149,7 +149,7 @@ nav {
 }
 
 #circle-cover-bg {
-
+    
 
     width: 90vw;
     height: 90vw;
@@ -164,7 +164,7 @@ nav {
 
 }
 
-#benefits-image {
+#benefits-image{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,6 +185,31 @@ nav {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+/*Meet Up*/
+
+#times{
+    background-image: url('../images/dublin-city.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#times div{
+    color: #fafafa;
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px;
+    text-align: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+    border: 2px solid white;
+}
+
+#times h3{
+    color: #fafafa;
 }
 
 
@@ -227,25 +252,24 @@ nav {
         right: 50px;
     }
 
-    #benefits-physical,
-    #benefits-mental {
+    #benefits-physical, #benefits-mental{
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
     #benefits-physical>div,
-    #benefits-mental>div {
-        width: 75%;
+#benefits-mental>div{
+    width: 75%;
 
-    }
+}
 
-    #benefits-mental>div {
-        text-align: end;
-        align-self: flex-end;
+#benefits-mental>div{
+    text-align: end;
+    align-self: flex-end;
 
 
-    }
+}
 
 }
 
@@ -259,13 +283,13 @@ nav {
 
 }
 
-@media screen and (min-width:1200px) {
-    #benefits {
+@media screen and (min-width:1200px){
+     #benefits {
         display: flex;
         flex-direction: row;
     }
 
-    #benefits>div {
+    #benefits > div {
         flex: 1;
     }
 
@@ -275,15 +299,13 @@ nav {
 
     #benefits-mental {
         order: 1;
-
-
-    #benefits-mental>div {
-            align-self: flex-start;
-        }
-
-    #benefits-physical>div {
-            align-self: flex-end;
-        }
-
-
     }
+
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-end;
+    }
+}
